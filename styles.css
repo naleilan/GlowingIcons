@@ -239,3 +239,18 @@ ul li a::before {
     background-position: 500%;
   }
 }
+
+@keyframes glow {
+  0% {
+  }
+
+  25% {
+  }
+
+  75% {
+  }
+
+  100% {
+    background-position: 500%;
+  }
+}
