@@ -9,8 +9,8 @@ body {
 
 div {
   display: flex;
-
   justify-content: center;
+  align-items: center;
   margin-bottom: 5rem;
 }
 
@@ -106,6 +106,8 @@ ul li label .check::after {
   border: 2px solid #161616;
 }
 
+/*** class="blu" ***/
+
 ul li label input[type="checkbox"]:checked ~ .check::before {
   background-color: rgba(0, 176, 255, 1);
   box-shadow: 0 0 10px rgba(0, 176, 255, 1), 0 0 15px rgba(0, 176, 255, 1),
@@ -117,6 +119,41 @@ ul li label input[type="checkbox"]:checked ~ .fa {
   color: rgba(0, 176, 255, 1);
 }
 
+/*** class="orng" ***/
+.orng input[type="checkbox"]:checked ~ .check::before {
+  background-color: rgb(255, 72, 0);
+  box-shadow: 0 0 10px rgb(255, 72, 0), 0 0 15px rgb(255, 72, 0),
+    0 0 20px rgb(255, 72, 0), 0 0 25px rgb(255, 72, 0),
+    0 0 0 2px rgba(255, 94, 0, 0.1);
+}
+
+.orng input[type="checkbox"]:checked ~ .fa {
+  color: rgb(255, 72, 0);
+}
+
+/******silvr*****/
+.silvr input[type="checkbox"]:checked ~ .check::before {
+  background-color: rgb(231, 209, 200);
+  box-shadow: 0 0 10px rgb(231, 209, 200), 0 0 15px rgb(231, 209, 200),
+    0 0 20px rgb(231, 209, 200), 0 0 25px rgb(231, 209, 200),
+    0 0 0 2px rgba(255, 94, 0, 0.1);
+}
+
+.silvr input[type="checkbox"]:checked ~ .fa {
+  color: rgb(231, 209, 200);
+}
+
+/****redd******/
+.redd input[type="checkbox"]:checked ~ .check::before {
+  background-color: rgb(212, 32, 32);
+  box-shadow: 0 0 10px rgb(212, 32, 32), 0 0 15px rgb(212, 32, 32),
+    0 0 20px rgb(212, 32, 32)), 0 0 25px rgb(212, 32, 32),
+    0 0 0 2px rgba(255, 94, 0, 0.1);
+}
+
+.redd input[type="checkbox"]:checked ~ .fa {
+  color: rgb(212, 32, 32);
+}
 /**********/
 ul li a::before {
   content: "";
@@ -131,6 +168,21 @@ ul li a::before {
   z-index: -1;
 }
 
+/*******redd1******/
+.redd1::before {
+  background-color: #d42020;
+}
+
+.redd1:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #d42020;
+}
+
+.redd1:hover {
+  color: #d42020;
+  box-shadow: 0 0 5px #d42020;
+  text-shadow: 0 0 5px #d42020;
+}
 /***** yellow *****/
 .ylw::before {
   background-color: #ffee10;
